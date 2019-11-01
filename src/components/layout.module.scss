@@ -1,0 +1,13 @@
+.container {
+    min-height: 200vh;
+    
+    
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.content {
+    flex-grow: 1;
+}

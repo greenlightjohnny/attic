@@ -1,0 +1,90 @@
+.background {
+    background-image: url('../images/angel.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    //background-attachment: fixed;
+    height: 60vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    padding-top: 12rem;
+    color: #fff;
+}
+
+
+
+
+
+.center {
+    margin-left: 4rem;
+
+    h2 {
+        font-size: 4rem;
+        
+    }
+
+    span {
+        color: #39dae6;
+        font-style: italic;
+    }
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 53vh;
+
+    article {
+        min-width: 350px;
+        min-height: 400px;
+        flex: 1;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+            text-align: center;
+            color: #fff;
+            text-underline-position: below;
+            text-decoration-style: wavy;
+            text-decoration: underline;
+            text-decoration-color: aquamarine;
+        }
+
+        p {
+            color: #f4f4f4;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+    }
+
+}
+
+.flex > article:nth-child(1) { background-color: #292c2f;}
+.flex > article:nth-child(2) { background-color:#425664;}
+.flex > article:nth-child(3) { background-color: #001730;}
+.flex > article:nth-child(4) { background-color: #425664;}
+.flex > article:nth-child(5) { background-color: #001730;}
+.flex > article:nth-child(6) { background-color: #425664;}
+
+.more {
+    text-decoration: none;
+    border: 1px solid #9bf1ff;
+    color: white;
+    padding: .4rem;
+    display: block;
+    max-width: 8rem;
+    margin-top: 2rem;
+   
+}
+
+.morec {
+    margin-top: auto;
+    margin-bottom: 2rem;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}

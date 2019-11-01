@@ -5,5 +5,24 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: 'Angels in the Attic',
+    author: 'Admin'
+  },
+  plugins: [
+    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/images`,
+        name: 'images'
+      }
+    },
+
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
+
+    
+  ]
+
 }
