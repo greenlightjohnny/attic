@@ -11,8 +11,8 @@ collections:
   - label: "Pages"
     name: "pages"
     files:
-      - label: "Home Page"
-        name: "home"
+      - label: "About Home"
+        name: "about"
         file: "content/home.md"
         fields:
           - {label: Title, name: title, widget: string}
