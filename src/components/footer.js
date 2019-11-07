@@ -8,7 +8,7 @@ import Img from 'gatsby-image'
 const Footer = () => {
     const datatwo = useStaticQuery(graphql`
     query {
-        file(relativePath: { eq: "logot.png" }) {
+        file(relativePath: { eq: "images/logot.png" }) {
             childImageSharp {
                 fixed(width: 270, height: 80) {
                     ...GatsbyImageSharpFixed
@@ -35,9 +35,9 @@ const Footer = () => {
                     <li><Link to="/">Home</Link></li>
                     <li><Link to='/about'>About</Link></li>
                     <li><Link to='/volunteer'>Volunteer</Link></li>
-                    <li><Link>Donate</Link></li>
-                    <li><Link>News</Link></li>
-                    <li><Link>Contact</Link></li>
+                    <li><Link to='/donate'>Donate</Link></li>
+                    <li><Link to='/news'>News</Link></li>
+                    <li><Link to='/contact'>Contact</Link></li>
                 </ul>
             </nav>
             

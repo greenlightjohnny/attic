@@ -32,7 +32,11 @@ const MainPage = () => {
                 </article>
                 <article>
                     <h3>News</h3>
-                    <p>Again</p>
+                    <div className="fb-page" 
+  data-href="https://www.facebook.com/AngelsintheAtticFloydVa/"
+  data-width="380" 
+  data-hide-cover="false"
+  data-show-facepile="false"></div>
                     <div className={indexStyles.morec}>
                     <Link className={indexStyles.more} to="/about">Read More</Link>
                     </div>

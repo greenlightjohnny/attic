@@ -2,12 +2,14 @@ import React from 'react'
 import headerStyles from './header.module.scss'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
+//import Slider from 'react-burgers'
+//import { Slider } from 'react-burgers'
 
 const Header = () => {
     
     const datatwo = useStaticQuery(graphql`
     query {
-        file(relativePath: { eq: "logot.png" }) {
+        file(relativePath: { eq: "images/logot.png" }) {
             childImageSharp {
                 fixed(width: 170, height: 50) {
                     ...GatsbyImageSharpFixed
@@ -24,7 +26,7 @@ const Header = () => {
                 </Link>
             
             
-            <nav>
+            <nav className={headerStyles.mainNav}>
                 <ul className={headerStyles.navList}>
                     <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/">Home </Link></li>
                     <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}  to="/blog">Blog </Link></li>
@@ -32,7 +34,15 @@ const Header = () => {
                     <li> <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}  to="/volunteer">Volunteer </Link></li>
                 </ul>
             </nav>
-            </header>
+
+            <button className={headerStyles.ham}>
+            <div className={headerStyles.mIcon}></div>
+            </button>
+ 
+          
+        </header>
+
+        
     )
 }
 
