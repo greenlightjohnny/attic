@@ -1,14 +1,20 @@
-backend:
-  name: test-repo
+# In your static/admin/config.yml file
+
+backend: 
+    name: github
+    repo: oNtAiR/attic
+
 media_folder: static/assets
 public_folder: assets
+
 collections:
-  - name: blog
-    label: Blog
-    folder: blog
-    create: true
-    fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: datetime }
-      - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "content/home.md"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro text, name: intro, widget: text}
+          - {label: Image, name: image, widget: image}
