@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout'
 import aboutStyles from './about.module.scss'
+import { Link, useStaticQuery, graphql } from "gatsby"
 
 
 const About = () => {
