@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import indexStyles from "./index.module.scss"
+import { FaHandsHelping, FaCalendarDay, FaHandHoldingHeart, FaNewspaper, FaChild, FaUserFriends } from 'react-icons/fa'
 
 const MainPage = () => {
   const data = useStaticQuery(graphql`
@@ -40,6 +41,7 @@ const MainPage = () => {
 
       <section className={indexStyles.flex}>
         <article>
+            <FaHandHoldingHeart className={indexStyles.social}></FaHandHoldingHeart>
           {data.allMarkdownRemark.edges.map((edge, i) => {
             return (
               <div key={i}>
@@ -56,6 +58,7 @@ const MainPage = () => {
           </div>
         </article>
         <article>
+            <FaNewspaper className={indexStyles.social}></FaNewspaper>
           <h3>News</h3>
           <div
             className="fb-page"
@@ -71,6 +74,7 @@ const MainPage = () => {
           </div>
         </article>
         <article>
+            <FaHandsHelping className={indexStyles.social}></FaHandsHelping>
           {data.allMarkdownRemark.edges.map((edge, i) => {
             return (
               <div key={i}>
@@ -87,6 +91,7 @@ const MainPage = () => {
           </div>
         </article>
         <article>
+            <FaChild className={indexStyles.social}></FaChild>
           {data.allMarkdownRemark.edges.map((edge, i) => {
             return (
               <div key={i}>
@@ -103,6 +108,7 @@ const MainPage = () => {
           </div>
         </article>
         <article>
+            <FaCalendarDay className={indexStyles.social}></FaCalendarDay>
           {data.allMarkdownRemark.edges.map((edge, i) => {
             return (
               <div key={i}>
@@ -118,6 +124,7 @@ const MainPage = () => {
           </div>
         </article>
         <article>
+            <FaUserFriends className={indexStyles.social}></FaUserFriends>
           {data.allMarkdownRemark.edges.map((edge, i) => {
             return (
               <div key={i}>
