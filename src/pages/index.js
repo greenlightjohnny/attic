@@ -24,7 +24,7 @@ const MainPage = () => {
       }
       `)
 
-      console.log(data);
+     
 
     return (
         <Layout>
