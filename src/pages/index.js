@@ -19,6 +19,12 @@ const MainPage = () => {
                 intro
                 introv
                 titlev
+                titled
+                introd
+                titleh
+                introh
+                titlef
+                introf
               }
             }
           }
@@ -85,39 +91,41 @@ const MainPage = () => {
                         </div>
                 </article>
                 <article>
-                    <h3>Donate</h3>
-                    <p>DONATION DROPOFFS. The sole location for dropping off donations of all kinds, and for the Angels Furniture Store, is 112 Needmore Lane, Floyd, VA, which is located on the corner of Route 8 and Needmore Lane next door to the Harvest Moon Food Store. Donations can be dropped off 24 hours a day, every day. Most donations can be placed inside the minibarn storage building in the paved upper driveway. If left outside, the weather is most likely to damage them. Furniture donations can be placed on the concrete pad (under the overhang of the large building) located at the end of the lower gravel driveway which is just below the house, but it is preferred you do so during open hours.</p>
+                {data.allMarkdownRemark.edges.map((edge, i) => {
+                return (
+                            <div key={i}>
+                                <h3>{edge.node.frontmatter.titled}</h3>
+                                <p>{edge.node.frontmatter.introd}</p>
+                            </div>
+                        )
+                    })}
 
                     <div className={indexStyles.morec}>
                     <Link className={indexStyles.more} to="/about">Read More</Link>
                     </div>
                 </article>
                 <article>
-                    <h3>Hours</h3>
-                    <p>
-                    Angels in the Attic hours and days of operation:
-
-Tuesdays – 9:00am to 4:00pm
-
-Fridays – 9:00am to 7:00pm April until Christmas and 9:00am to 4:00pm January through March
-
-Saturdays – 9:00am to 2:00pm 
-
-Angels Boutique hours and days of operation:
-
-Tuesdays – 10:am to 4:00pm
-
-Fridays – 10:00am to 7:00pm April until Christmas and 10:00am to 4:00pm January through March
-
-Saturday – 10:00am to 2:00pm
-                    </p>
+                {data.allMarkdownRemark.edges.map((edge, i) => {
+                return (
+                            <div key={i}>
+                                <h3>{edge.node.frontmatter.titleh}</h3>
+                                <p>{edge.node.frontmatter.introh}</p>
+                            </div>
+                        )
+                    })}
                     <div className={indexStyles.morec}>
                     <Link className={indexStyles.more} to="/about">Read More</Link>
                     </div>
                 </article>
                 <article>
-                    <h3>Friends</h3>
-                    <p>Madness</p>
+                {data.allMarkdownRemark.edges.map((edge, i) => {
+                return (
+                            <div key={i}>
+                                <h3>{edge.node.frontmatter.titlef}</h3>
+                                <p>{edge.node.frontmatter.introf}</p>
+                            </div>
+                        )
+                    })}
                     <div className={indexStyles.morec}>
                     <Link className={indexStyles.more} to="/about">Read More</Link>
                     </div>

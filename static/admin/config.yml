@@ -11,13 +11,17 @@ collections:
   - label: "Pages"
     name: "pages"
     files:
-      - label: "About Home"
+      - label: "Home Page"
         name: "about"
         file: "content/home.md"
         fields:
-          - {label: Title, name: title, widget: string}
+          - {label: Intro title, name: title, widget: string}
           - {label: Intro text, name: intro, widget: text}
-          - {label: Title volunteer, name: titlev, widget: string}
-          - {label: Volunteer intro, name: introv, widget: text}
-          
-          
+          - {label: Volunteer title, name: titlev, widget: string}
+          - {label: Volunteer text, name: introv, widget: text}
+          - {label: Donate title, name: titled, widget: string}
+          - {label: Donate text, name: introd, widget: text}
+          - {label: Hours title, name: titleh, widget: string}
+          - {label: Hours text, name: introh, widget: text}
+          - {label: Friends title, name: titlef, widget: string}
+          - {label: Friends text, name: introf, widget: text}
