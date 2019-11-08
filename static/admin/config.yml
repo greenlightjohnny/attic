@@ -25,3 +25,12 @@ collections:
           - {label: Hours text, name: introh, widget: text}
           - {label: Friends title, name: titlef, widget: string}
           - {label: Friends text, name: introf, widget: text}
+
+      
+  
+      - label: "About"
+        name: "about"
+        file: "content/home.md"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Our History, name: intro, widget: text}
