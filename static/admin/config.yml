@@ -27,17 +27,16 @@ collections:
           - {label: Friends text, name: introf, widget: text}
 
       
-  
-collections:
+
   - label: "About Page"
     name: "about"
     files:
       - label: "About Page"
         name: "about"
-        file: "content/home.md"
+        file: "content/about.md"
         fields:
-          - {label: Intro title, name: title, widget: string}
-          - {label: Intro text, name: intro, widget: text}
+          - {label: About title, name: title, widget: string}
+          - {label: About text, name: intro, widget: text}
           
 
       
