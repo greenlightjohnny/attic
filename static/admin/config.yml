@@ -8,11 +8,11 @@ media_folder: static/assets
 public_folder: assets
 
 collections:
-  - label: "Pages"
-    name: "pages"
+  - label: "Home Page"
+    name: "home"
     files:
       - label: "Home Page"
-        name: "about"
+        name: "home"
         file: "content/home.md"
         fields:
           - {label: Intro title, name: title, widget: string}
@@ -28,9 +28,18 @@ collections:
 
       
   
-      - label: "About"
+collections:
+  - label: "About Page"
+    name: "about"
+    files:
+      - label: "About Page"
         name: "about"
         file: "content/home.md"
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Our History, name: intro, widget: text}
+          - {label: Intro title, name: title, widget: string}
+          - {label: Intro text, name: intro, widget: text}
+          
+
+      
+  
+  
