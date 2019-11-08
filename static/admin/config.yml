@@ -33,8 +33,8 @@ collections:
         name: "about"
         file: "content/about.md"
         fields:
-          - {label: About title, name: title, widget: string}
-          - {label: About text, name: intro, widget: text}
+          - {label: About title, name: titlea, widget: string}
+          - {label: About text, name: introa, widget: text}
           
 
       

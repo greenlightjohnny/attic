@@ -6,9 +6,12 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 
 const About = () => {
 
+    
+
     return (
 
         <Layout>
+
 
             <section className={aboutStyles.container}>
                 <h1>About</h1>
