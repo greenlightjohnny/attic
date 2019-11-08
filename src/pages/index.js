@@ -17,6 +17,8 @@ const MainPage = () => {
               frontmatter {
                 title
                 intro
+                introv
+                titlev
               }
             }
           }
@@ -43,9 +45,9 @@ const MainPage = () => {
 
             <section className={indexStyles.flex}>
                 <article>
-                    {data.allMarkdownRemark.edges.map((edge) => {
+                    {data.allMarkdownRemark.edges.map((edge, i) => {
                         return (
-                        <div>
+                        <div key={i}>
                           <h3>{edge.node.frontmatter.title}</h3>
                           <p>{edge.node.frontmatter.intro}</p> 
                           </div>
@@ -69,9 +71,9 @@ const MainPage = () => {
                     </div>
                 </article>
                 <article>
-                    {data.allMarkdownRemark.edges.map((edge) => {
+                    {data.allMarkdownRemark.edges.map((edge, i) => {
                         return (
-                            <div>
+                            <div key={i}>
                                 <h3>{edge.node.frontmatter.titlev}</h3>
                                 <p>{edge.node.frontmatter.introv}</p>
                             </div>

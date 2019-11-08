@@ -17,7 +17,6 @@ collections:
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro text, name: intro, widget: text}
-    
           - {label: Title volunteer, name: titlev, widget: string}
           - {label: Volunteer intro, name: introv, widget: text}
           
