@@ -1,12 +1,31 @@
 import React from "react"
 import Layout from "../components/layout"
-import { Link } from 'gatsby'
+import { Link, useStaticQuery, graphql } from 'gatsby'
 import indexStyles from './index.module.scss'
 
 
 
 
+
 const MainPage = () => {
+
+      const data = useStaticQuery(graphql`
+      query {
+        allMarkdownRemark {
+          edges {
+            node {
+              frontmatter {
+                title
+                intro
+              }
+            }
+          }
+        }
+      }
+      `)
+
+      console.log(data);
+
     return (
         <Layout>
             <div className={indexStyles.background}>
@@ -19,12 +38,20 @@ const MainPage = () => {
                 
             </div>
 
+           
             
 
             <section className={indexStyles.flex}>
                 <article>
-                    <h3>About</h3>
-                    <p>Angels in the Attic is located in the Town of Floyd, in Floyd County, Virginia, and is composed of four non-profit stores and one donation center that rely on the sales of donated goods to fund a ministry which in turn provides ongoing monthly support for numerous Floyd County charitable organizations that feed the hungry, aid the needy, help children and the elderly, and provide for public safety.</p>
+                    {data.allMarkdownRemark.edges.map((edge) => {
+                        return (
+                        <div>
+                          <h3>{edge.node.frontmatter.title}</h3>
+                          <p>{edge.node.frontmatter.intro}</p> 
+                          </div>
+                    )
+                    })}
+                    
                     <div className={indexStyles.morec}>
                     <Link className={indexStyles.more} to="/about">Read More</Link>
                     </div>
@@ -42,17 +69,8 @@ const MainPage = () => {
                     </div>
                 </article>
                 <article>
-                    <h3>Volunteer</h3>
-                    <p>Angels in the Attic Store, Angels Boutique, Angels Christmas Store, Angels Furniture Store, and Angels Donation Center
-Really, Really Need YOU as a Volunteer
-
-Perhaps you have only a couple hours available — THAT IS FINE
-
-Perhaps you can’t commit to regular hours — THAT IS FINE TOO
-
-Angels is very very flexible and will accommodate your preferences
-
-                </p>
+                    
+                
                         <div className={indexStyles.morec}>
                         <Link className={indexStyles.more} to="/about">Read More</Link>
                         </div>
