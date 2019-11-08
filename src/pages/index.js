@@ -69,7 +69,14 @@ const MainPage = () => {
                     </div>
                 </article>
                 <article>
-                    
+                    {data.allMarkdownRemark.edges.map((edge) => {
+                        return (
+                            <div>
+                                <h3>{edge.node.frontmatter.titlev}</h3>
+                                <p>{edge.node.frontmatter.introv}</p>
+                            </div>
+                        )
+                    })}
                 
                         <div className={indexStyles.morec}>
                         <Link className={indexStyles.more} to="/about">Read More</Link>
