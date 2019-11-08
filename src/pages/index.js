@@ -19,12 +19,7 @@ const MainPage = () => {
                 intro
                 introv
                 titlev
-                titled
-                introd
-                titleh
-                introh
-                titlef
-                introf
+                
               }
             }
           }
@@ -94,8 +89,8 @@ const MainPage = () => {
                 {data.allMarkdownRemark.edges.map((edge, i) => {
                 return (
                             <div key={i}>
-                                <h3>{edge.node.frontmatter.titled}</h3>
-                                <p>{edge.node.frontmatter.introd}</p>
+                                <h3>{edge.node.frontmatter.title}</h3>
+                                <p>{edge.node.frontmatter.intro}</p>
                             </div>
                         )
                     })}
@@ -108,8 +103,8 @@ const MainPage = () => {
                 {data.allMarkdownRemark.edges.map((edge, i) => {
                 return (
                             <div key={i}>
-                                <h3>{edge.node.frontmatter.titleh}</h3>
-                                <p>{edge.node.frontmatter.introh}</p>
+                                <h3>{edge.node.frontmatter.title}</h3>
+                                <p>{edge.node.frontmatter.intro}</p>
                             </div>
                         )
                     })}
@@ -121,8 +116,8 @@ const MainPage = () => {
                 {data.allMarkdownRemark.edges.map((edge, i) => {
                 return (
                             <div key={i}>
-                                <h3>{edge.node.frontmatter.titlef}</h3>
-                                <p>{edge.node.frontmatter.introf}</p>
+                                <h3>{edge.node.frontmatter.title}</h3>
+                                <p>{edge.node.frontmatter.intro}</p>
                             </div>
                         )
                     })}
