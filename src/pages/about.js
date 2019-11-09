@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import aboutStyles from './about.module.scss'
 import { Link, useStaticQuery, graphql } from "gatsby"
+import Head from '../components/head'
 
 
 const About = () => {
@@ -29,7 +30,7 @@ const About = () => {
     return (
 
         <Layout>
-            
+            <Head title="About" />
 
             <section className={aboutStyles.container}>
 

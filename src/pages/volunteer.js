@@ -3,6 +3,7 @@ import Layout from '../components/layout'
 import aboutStyles from './about.module.scss'
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
+import Head from '../components/head'
 
 
 const Volunteeer = () => {
@@ -20,6 +21,7 @@ const Volunteeer = () => {
     `)
     return (
         <Layout>
+            <Head title="Volunteer" />
             <section className={aboutStyles.container}>
             <h1>Volunteer</h1>
 

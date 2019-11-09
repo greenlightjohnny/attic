@@ -9,8 +9,9 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: 'Angels in the Attic',
-    author: 'Admin'
+    title: 'Angels in The Attic',
+    author: 'Admin',
+    description:  "Information about the Angels in The Attic stores and donation center in Floyd County, VA"
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -26,6 +27,7 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     'gatsby-transformer-remark',
+    `gatsby-plugin-react-helmet`,
 
     //////FACEBOOK
     {

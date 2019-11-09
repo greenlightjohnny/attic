@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import indexStyles from "./index.module.scss"
 import { FaHandsHelping, FaCalendarDay, FaHandHoldingHeart, FaNewspaper, FaChild, FaUserFriends } from 'react-icons/fa'
+import Head from '../components/head'
 
 const MainPage = () => {
   const data = useStaticQuery(graphql`
@@ -30,6 +31,7 @@ const MainPage = () => {
 
   return (
     <Layout>
+        <Head title="Home"/>
       <div className={indexStyles.background}>
         <div className={indexStyles.center}>
           <h2>
