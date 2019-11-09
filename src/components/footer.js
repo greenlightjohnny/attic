@@ -21,7 +21,7 @@ const Footer = () => {
         <footer className={footerStyles.main}>
 
             <div>
-            <Link  to="/">
+            <Link  to="/" aria-label="home">
                 <Img fixed={datatwo.file.childImageSharp.fixed}></Img>
                 </Link>
                 <p>210 S Locust St <br></br> Floyd, VA 24091</p>
@@ -43,7 +43,7 @@ const Footer = () => {
             
             
             <div>
-                <a href="https://www.facebook.com/AngelsintheAtticFloydVa/">
+                <a aria-label="Facebook" href="https://www.facebook.com/AngelsintheAtticFloydVa/">
                 <FaFacebook className={footerStyles.social} />
                 </a>
                 
