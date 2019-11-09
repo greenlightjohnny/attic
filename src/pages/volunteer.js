@@ -4,7 +4,7 @@ import aboutStyles from './about.module.scss'
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import Head from '../components/head'
-
+import SEO from '../components/SEO'
 
 const Volunteeer = () => {
 
@@ -21,7 +21,7 @@ const Volunteeer = () => {
     `)
     return (
         <Layout>
-            <Head title="Volunteer" />
+            <SEO title="Volunteer" />
             <section className={aboutStyles.container}>
             <h1>Volunteer</h1>
 

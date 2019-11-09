@@ -4,6 +4,7 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 import indexStyles from "./index.module.scss"
 import { FaHandsHelping, FaCalendarDay, FaHandHoldingHeart, FaNewspaper, FaChild, FaUserFriends } from 'react-icons/fa'
 import Head from '../components/head'
+import SEO from '../components/SEO'
 
 const MainPage = () => {
   const data = useStaticQuery(graphql`
@@ -31,7 +32,7 @@ const MainPage = () => {
 
   return (
     <Layout>
-        <Head title="Home"/>
+        <SEO title="Home"/>
       <div className={indexStyles.background}>
         <div className={indexStyles.center}>
           <h2>

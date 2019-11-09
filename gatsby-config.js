@@ -11,7 +11,10 @@ module.exports = {
   siteMetadata: {
     title: 'Angels in The Attic',
     author: 'Admin',
-    description:  "Information about the Angels in The Attic stores and donation center in Floyd County, VA"
+    description:  "Information about the Angels in The Attic stores and donation center in Floyd County, VA",
+    url: "https://focused-volhard-dee302.netlify.com/",
+    image: "/src/images/logos.png",
+    titleTemplate: "%s | Angels in The Attic",
   },
   plugins: [
     `gatsby-plugin-sass`,

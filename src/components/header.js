@@ -19,8 +19,9 @@ const Header = () => {
     }
 `)
     return (
-        <header className={headerStyles.header}>
         
+        <header className={headerStyles.header}>
+                <SEO />
                 <Link  className={headerStyles.title} to="/" aria-label="home">
                 <Img fixed={datatwo.file.childImageSharp.fixed}></Img>
                 </Link>

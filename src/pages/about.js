@@ -3,6 +3,7 @@ import Layout from '../components/layout'
 import aboutStyles from './about.module.scss'
 import { Link, useStaticQuery, graphql } from "gatsby"
 import Head from '../components/head'
+import SEO from '../components/SEO'
 
 
 const About = () => {
@@ -30,7 +31,7 @@ const About = () => {
     return (
 
         <Layout>
-            <Head title="About" />
+            <SEO title="About" />
 
             <section className={aboutStyles.container}>
 
