@@ -1,5 +1,11 @@
 ---
 title: test this out
-intro: Annnndd
+introa: astASDF
+history: NEW TITLE
+historytext: SOme text here and here
+donations: DONATIONS
+donationstext: YESSSS
+creed: Creed
+creedtext: Our creed
 ---
 
