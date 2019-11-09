@@ -7,7 +7,7 @@ import { FaHandsHelping, FaCalendarDay, FaHandHoldingHeart, FaNewspaper, FaChild
 const MainPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      allMarkdownRemark {
+      allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/(home)/"}}) {
         edges {
           node {
             frontmatter {

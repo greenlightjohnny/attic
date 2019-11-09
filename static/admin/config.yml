@@ -39,8 +39,7 @@ collections:
           - {label: History text, name: historytext, widget: text} 
           - {label: Donations title, name: donations, widget: string}
           - {label: Donations text, name: donationstext, widget: text} 
-          - {label: Creed title, name: creed, widget: string}
-          - {label: Creed text, name: creedtext, widget: markdown} 
+          
           
           
 

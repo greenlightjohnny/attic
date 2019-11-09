@@ -8,7 +8,10 @@ $screen-lg-min: 992px;
         @content;
     }
   }
-
+:root {
+    --ease-in-quad: cubic-bezier(0.55,0.085,0.68,0.53);
+}
+  
 
 .background {
     //background-image: url('../images/angel.jpg');
@@ -94,15 +97,20 @@ $screen-lg-min: 992px;
 
 .more {
     text-decoration: none;
-    border: 1px solid #000;
+    border-radius: 15px;
     color: #fff;
-    background-color: #000;
+    background-color: #11cedb;
     padding: .4rem;
     display: block;
     max-width: 8rem;
     margin-top: 2rem;
     box-shadow: 0 30px 60px -10px rgba(0,0,0,0.3), 0 18px 36px -18px rgba(0,0,0,0.33);
-   
+    transition: transform 0.3s var(--ease-out-quad),box-shadow 0.3s var(--ease-out-quad);
+
+}
+
+.more:hover {
+
 }
 
 .morec {
