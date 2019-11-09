@@ -26,6 +26,6 @@ donationstext: >-
   and then shared with other not-for-profit human service agencies such as the
   Rescue Mission, Salvation Army and Goodwill.
 creed: Creed
-creedtext: Our creed
+creedtext: "<span>\r\n\n\\    “For I was hungry and you gave me something to eat,<br></br>\r\n\n\r\n\nI was thirsty and you gave me something to drink, <br></br>\r\n\n\r\n\nI was a stranger and you invited me in, <br></br>\r\n\n\r\n\nI needed clothes and you clothed me,<br></br>\r\n\nI was sick and you looked after me,<br></br>\r\n\n\r\n\nI was in prison and you came to visit me…<br></br>\r\n\n\r\n\nI tell you the truth, <br>\r\n\n</br>whatever you did for the least of these brothers of mine, <br></br>\r\n\nyou did for me.” <br></br> </span>\r\n\n\r\n\nMatthew 25:35-36 and 40"
 ---
 
