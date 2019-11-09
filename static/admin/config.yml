@@ -33,8 +33,15 @@ collections:
         name: "about"
         file: "content/about.md"
         fields:
-          - {label: About title, name: titlea, widget: string}
+          - {label: About title, name: title, widget: string}
           - {label: About text, name: introa, widget: text}
+          - {label: History title, name: history, widget: string}
+          - {label: History text, name: historytext, widget: text} 
+          - {label: Donations title, name: donations, widget: string}
+          - {label: Donations text, name: donationstext, widget: text} 
+          - {label: Creed title, name: creed, widget: string}
+          - {label: Creed text, name: creedtext, widget: text} 
+          
           
 
       

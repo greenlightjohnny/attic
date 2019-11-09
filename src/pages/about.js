@@ -6,14 +6,33 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 
 const About = () => {
 
-    
+    const data = useStaticQuery(graphql`
+    query {
+        allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/(about)/"}}) {
+          edges {
+            node {
+              frontmatter {
+                title
+                intro
+              }
+            }
+          }
+        }
+      }
+    `)
 
     return (
 
         <Layout>
-
+            
 
             <section className={aboutStyles.container}>
+
+                {data.allMarkdownRemark.edges.map((edge) => {
+                    return (
+                        <h1>{edge.node.frontmatter.title}</h1>
+                    )
+                })}
                 <h1>About</h1>
             <article className={aboutStyles.section}>
                 <h2>Our History</h2>
