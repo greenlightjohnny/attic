@@ -35,6 +35,7 @@
     "react-dom": "^16.11.0",
     "react-icons": "^3.8.0",
     "react-typography": "^0.16.19",
+    "typeface-amita": "0.0.75",
     "typeface-open-sans": "0.0.75",
     "typography": "^0.16.19",
     "typography-theme-fairy-gates": "^0.16.19"
