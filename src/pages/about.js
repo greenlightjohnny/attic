@@ -4,6 +4,7 @@ import aboutStyles from './about.module.scss'
 import { Link, useStaticQuery, graphql } from "gatsby"
 import Head from '../components/head'
 import SEO from '../components/SEO'
+import SideBarr from '../components/layout2'
 
 
 const About = () => {
@@ -31,6 +32,7 @@ const About = () => {
     return (
 
         <Layout>
+            
             <SEO title="About" />
 
             <section className={aboutStyles.container}>

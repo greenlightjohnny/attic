@@ -4,6 +4,7 @@ import { Link, graphql, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
 //import Slider from 'react-burgers'
 //import { Slider } from 'react-burgers'
+import Sidebar from '../components/sidebar'
 
 const Header = () => {
     
@@ -27,19 +28,10 @@ const Header = () => {
                 </Link>
             
             
-            <nav className={headerStyles.mainNav}>
-                <ul className={headerStyles.navList}>
-                    <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/">Home </Link></li>
-                    <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}  to="/blog">Blog </Link></li>
-                    <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}  to="/about">About </Link></li>
-                    <li> <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}  to="/volunteer">Volunteer </Link></li>
-                </ul>
-            </nav>
+          
 
-            <button className={headerStyles.ham}>
-            <div className={headerStyles.mIcon}></div>
-            </button>
- 
+          
+            <Sidebar />
           
         </header>
 
