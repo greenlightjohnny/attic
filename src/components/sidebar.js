@@ -12,8 +12,9 @@ const SideBar = () => {
           position: 'fixed',
           width: '36px',
           height: '30px',
-          right: '36px',
-          top: '15px'
+          right: '0px',
+          top: '15px',
+          marginRight: '5%'
         },
         bmBurgerBars: {
           background: '#39dae6'
@@ -62,7 +63,7 @@ const SideBar = () => {
                     <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/about">About </Link>
                     <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}  to="/">News </Link>
                     <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}  to="/Volunteer">Volunteer </Link>
-                    <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}  to="/Donate">Donate </Link>
+                    <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}  to="/donate">Donate </Link>
                     <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}  to="/Hours">Hours</Link>
                 
             

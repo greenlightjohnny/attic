@@ -6,7 +6,7 @@ import Img from "gatsby-image"
 import Head from '../components/head'
 import SEO from '../components/SEO'
 
-const Volunteeer = () => {
+const Volunteer = () => {
 
     const data = useStaticQuery(graphql`
         query {
@@ -63,4 +63,4 @@ Inquire at any of the Angels in the Attic Stores during operating hours
     )
 }
 
-export default Volunteeer
+export default Volunteer

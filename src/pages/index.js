@@ -5,6 +5,8 @@ import indexStyles from "./index.module.scss"
 import { FaHandsHelping, FaCalendarDay, FaHandHoldingHeart, FaNewspaper, FaChild, FaUserFriends } from 'react-icons/fa'
 import Head from '../components/head'
 import SEO from '../components/SEO'
+import Faceexport from '../components/faceexport'
+import Example from '../components/reface'
 
 const MainPage = () => {
   const data = useStaticQuery(graphql`
@@ -63,13 +65,7 @@ const MainPage = () => {
         <article>
             <FaNewspaper className={indexStyles.social}></FaNewspaper>
           <h3>News</h3>
-          <div
-            className="fb-page"
-            data-href="https://www.facebook.com/AngelsintheAtticFloydVa/"
-            data-width="380"
-            data-hide-cover="false"
-            data-show-facepile="false"
-          ></div>
+          <Example />
           <div className={indexStyles.morec}>
             <Link className={indexStyles.more} to="/about">
               Read More
@@ -88,7 +84,7 @@ const MainPage = () => {
           })}
 
           <div className={indexStyles.morec}>
-            <Link className={indexStyles.more} to="/about">
+            <Link className={indexStyles.more} to="/volunteer">
               Read More
             </Link>
           </div>
