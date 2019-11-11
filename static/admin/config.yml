@@ -24,7 +24,7 @@ collections:
           - {label: Hours title, name: titleh, widget: string}
           - {label: Hours text, name: introh, widget: text}
           - {label: Friends title, name: titlef, widget: string}
-          - {label: Friends text, name: introf, widget: text}
+          - {label: Friends text, name: introf, widget: markdown}
 
       
 
