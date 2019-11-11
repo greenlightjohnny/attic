@@ -54,7 +54,7 @@ module.exports = {
         appId: `2518108111807119`,
   
         // Which version of the SDK to load.
-        version: `v3.3`,
+        version: `v5.0`,
   
         // Determines whether XFBML tags used by social plugins are parsed.
         xfbml: true,
