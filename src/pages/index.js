@@ -96,7 +96,16 @@ const MainPage = () => {
             return (
               <div key={i}>
                 <h3>{edge.node.frontmatter.titled}</h3>
+          
                 <p>{edge.node.frontmatter.introd}</p>
+                <address>
+    
+    You may also want to visit us:<br></br>
+    Mozilla Foundation<br></br>
+    331 E Evelyn Ave<br></br>
+    Mountain View, CA 94041<br></br>
+    USA
+  </address>
               </div>
             )
           })}
@@ -109,6 +118,7 @@ const MainPage = () => {
         </article>
         <article>
             <FaCalendarDay className={indexStyles.social}></FaCalendarDay>
+            <h3>Hours</h3>
             <table className={aboutStyles.table}>
           <tbody>
             <tr>
