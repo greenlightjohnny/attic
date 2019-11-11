@@ -8,17 +8,19 @@ intro: >-
   organizations that feed the hungry, aid the needy, help children and the
   elderly, and provide for public safety.
 titlev: Volunteers
-introv: >-
+introv: >+
+  Angels in The Attic relies on volunteers like yourself to successfully
+  operate.
+
+  We are always in need of new volunteers!
+
+  It's a great way to help your local community.
+
   If you would like to volunteer, or have questions about how to volunteer,
+  click below to visit our volunteer information page.
 
+  You can also inquire at any of stores.
 
-  Contact Gennell Vest at 540-745-4500 for the Attic and the Angels Christmas
-  Store, Rhonda Daiber at 540-230-1793 for the Boutique or Marie Daniel for the
-  Angels Donation Center or the Angels Furniture Store.
-
-  Email angelsfloydinfo@gmail.com
-
-  Inquire at any of the Angels in the Attic Stores during operating hours
 titled: Donate
 introd: >-
   DONATION DROPOFFS. The sole location for dropping off donations of all kinds,
