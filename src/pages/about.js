@@ -1,10 +1,10 @@
 import React from 'react'
 import Layout from '../components/layout'
 import aboutStyles from './about.module.scss'
-import { Link, useStaticQuery, graphql } from "gatsby"
-import Head from '../components/head'
+import { useStaticQuery, graphql } from "gatsby"
+
 import SEO from '../components/SEO'
-import SideBarr from '../components/layout2'
+
 
 
 const About = () => {

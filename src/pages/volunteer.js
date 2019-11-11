@@ -3,7 +3,7 @@ import Layout from '../components/layout'
 import aboutStyles from './about.module.scss'
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
-import Head from '../components/head'
+
 import SEO from '../components/SEO'
 
 const Volunteer = () => {

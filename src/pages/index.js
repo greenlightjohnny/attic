@@ -3,10 +3,11 @@ import Layout from "../components/layout"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import indexStyles from "./index.module.scss"
 import { FaHandsHelping, FaCalendarDay, FaHandHoldingHeart, FaNewspaper, FaChild, FaUserFriends } from 'react-icons/fa'
-import Head from '../components/head'
+
 import SEO from '../components/SEO'
-import Faceexport from '../components/faceexport'
+
 import Example from '../components/reface'
+import aboutStyles from './about.module.scss'
 
 const MainPage = () => {
   const data = useStaticQuery(graphql`
@@ -101,21 +102,54 @@ const MainPage = () => {
           })}
 
           <div className={indexStyles.morec}>
-            <Link className={indexStyles.more} to="/about">
+            <Link className={indexStyles.more} to="/donate">
               Read More
             </Link>
           </div>
         </article>
         <article>
             <FaCalendarDay className={indexStyles.social}></FaCalendarDay>
-          {data.allMarkdownRemark.edges.map((edge, i) => {
-            return (
-              <div key={i}>
-                <h3>{edge.node.frontmatter.titleh}</h3>
-                <p>{edge.node.frontmatter.introh}</p>
-              </div>
-            )
-          })}
+            <table className={aboutStyles.table}>
+          <tbody>
+            <tr>
+              <th>Angels in The Attic</th>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>9am - 4pm</td>
+            </tr>
+            <tr>
+              <td>Fridays</td>
+              <td>9am - 7pm</td>
+            </tr>
+            <tr>
+              <td>Saturdays</td>
+              <td>9am - 2pm</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table className={aboutStyles.table}>
+          <tbody>
+            <tr>
+              <th>Angels Botique</th>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>10am - 4pm</td>
+            </tr>
+            <tr>
+              <td>Fridays</td>
+              <td>9am - 7pm</td>
+            </tr>
+            <tr>
+              <td>Saturdays</td>
+              <td>10am - 2pm</td>
+            </tr>
+          </tbody>
+        </table>
           <div className={indexStyles.morec}>
             <Link className={indexStyles.more} to="/about">
               Read More
@@ -133,7 +167,7 @@ const MainPage = () => {
             )
           })}
           <div className={indexStyles.morec}>
-            <Link className={indexStyles.more} to="/about">
+            <Link className={indexStyles.more} to="/donate">
               Read More
             </Link>
           </div>
