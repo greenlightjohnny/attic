@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FacebookProvider, Page } from 'react-facebook';
+const { FacebookProvider, Page } = require('react-facebook')
  
 export default class Example extends Component {
   render() {
