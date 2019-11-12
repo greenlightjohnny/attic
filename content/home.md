@@ -38,17 +38,6 @@ introh: |-
 
   Saturdays – 9:00am to 2:00pm 
 titlef: Friends
+introf: hmmmm
 ---
-**Help US**
 
-****
-
-We love hearing from you!
-
-> Best of us
-
-Testing Testing Testing
-
-* Hi
-* HOw
-* is
