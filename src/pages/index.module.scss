@@ -20,12 +20,12 @@ $screen-lg-min: 992px;
     //background-repeat: no-repeat;
     //background-attachment: fixed;
     background-color: #20341b;
-    height: 60vh;
+    height: 56vh;
     width: 100%;
-    position: fixed;
+    position: absolute;
     top: 0;
     z-index: -1;
-    padding-top: 12rem;
+    padding-top: 9rem;
     color: #e0ffff;
 }
 
@@ -59,7 +59,7 @@ $screen-lg-min: 992px;
         font-style: italic;
         display: inline-block;
         padding: 0 1rem 2rem 1rem;
-        max-width: 500px;
+        
     }
 }
 
@@ -67,8 +67,12 @@ $screen-lg-min: 992px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 53vh;
-
+    margin-top: 50vh;
+    
+    @include lg {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
     article {
         min-width: 350px;
         min-height: 400px;

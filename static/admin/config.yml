@@ -24,7 +24,7 @@ collections:
           - {label: Hours title, name: titleh, widget: string}
           - {label: Hours text, name: introh, widget: text}
           - {label: Friends title, name: titlef, widget: string}
-          - {label: Friends body, name: body, widget: markdown}
+          - {label: Friends body, name: intorf, widget: markdown}
 
       
 
@@ -38,7 +38,7 @@ collections:
           - {label: History title, name: history, widget: string}
           - {label: History text, name: historytext, widget: text} 
           - {label: Donations title, name: donations, widget: string}
-          - {label: Donations text, name: body, widget: text} 
+          - {label: Donations text, name: donationstext, widget: text} 
           
           
           
