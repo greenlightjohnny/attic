@@ -3,9 +3,9 @@ import Layout from "../components/layout"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import indexStyles from "./index.module.scss"
 import { FaHandsHelping, FaCalendarDay, FaHandHoldingHeart, FaNewspaper, FaChild, FaUserFriends } from 'react-icons/fa'
-
+import Img from 'gatsby-image'
 import SEO from '../components/SEO'
-
+import Logo from '../components/logo'
 import Example from '../components/reface'
 import aboutStyles from './about.module.scss'
 
@@ -31,20 +31,27 @@ const MainPage = () => {
         }
       }
     }
+
+    
   `)
+
+  
 
   return (
     <Layout>
         <SEO title="Home"/>
       <div className={indexStyles.background}>
-        <div className={indexStyles.center}>
+        <div className={indexStyles.max}>
+        <Logo />
+        </div>
+        {/* <div className={indexStyles.center}>
           <h2>
             <span>Angels </span>in The Attic
           </h2>
           <div className={indexStyles.outline}>
             A non-profit ministry devoted to serving the community through sales of donated items at our stores
           </div>
-        </div>
+        </div> */}
       </div>
 
       <section className={indexStyles.flex}>

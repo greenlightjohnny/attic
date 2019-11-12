@@ -25,7 +25,7 @@ $screen-lg-min: 992px;
     position: absolute;
     top: 0;
     z-index: -1;
-    padding-top: 9rem;
+    padding-top: 4rem;
     color: #e0ffff;
 }
 
@@ -43,6 +43,7 @@ $screen-lg-min: 992px;
     h2 {
         font-size: 2rem;
         color: #fffacd;
+        //#b1813a
         font-family: "amita";
         
         @include lg {
@@ -61,6 +62,14 @@ $screen-lg-min: 992px;
         padding: 0 1rem 2rem 1rem;
         max-width: 500px;
     }
+
+   
+}
+.max {
+    max-width: 400px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .flex {
