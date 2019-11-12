@@ -20,7 +20,7 @@ $screen-lg-min: 992px;
     //background-repeat: no-repeat;
     //background-attachment: fixed;
     background-color: #20341b;
-    height: 56vh;
+    height: 46vh;
     width: 100%;
     position: absolute;
     top: 0;
@@ -59,7 +59,7 @@ $screen-lg-min: 992px;
         font-style: italic;
         display: inline-block;
         padding: 0 1rem 2rem 1rem;
-        
+        max-width: 500px;
     }
 }
 
@@ -67,7 +67,7 @@ $screen-lg-min: 992px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 50vh;
+    margin-top: 40vh;
     
     @include lg {
         padding-left: 5%;
