@@ -19,14 +19,14 @@ $screen-lg-min: 992px;
     //background-position: center;
     //background-repeat: no-repeat;
     //background-attachment: fixed;
-    background-color: black;
+    background-color: #20341b;
     height: 60vh;
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: -1;
     padding-top: 12rem;
-    color: #fff;
+    color: #e0ffff;
 }
 
 
@@ -35,13 +35,14 @@ $screen-lg-min: 992px;
 
 .center {
     
-        margin-left: 2rem;
+        margin: 0 auto;
+        text-align: center;
         @include lg {
-            margin-left: 7%;
+            //margin-left: 7%;
         }
     h2 {
         font-size: 2rem;
-        
+        color: #fffacd;
         font-family: "amita";
         
         @include lg {
@@ -52,6 +53,13 @@ $screen-lg-min: 992px;
     span {
         color: #39dae6;
         font-family: "amita";
+    }
+
+    .outline {
+        font-style: italic;
+        display: inline-block;
+        padding: 0 1rem 2rem 1rem;
+        max-width: 500px;
     }
 }
 
@@ -89,11 +97,11 @@ $screen-lg-min: 992px;
 }
 
 .flex > article:nth-child(1) { background-color: #fdfdfd;}
-.flex > article:nth-child(2) { background-color:#f4f4f4;}
+.flex > article:nth-child(2) { background-color:#fdfdfd;}
 .flex > article:nth-child(3) { background-color: #fdfdfd;}
-.flex > article:nth-child(4) { background-color: #f4f4f4;}
+.flex > article:nth-child(4) { background-color: #fdfdfd;}
 .flex > article:nth-child(5) { background-color: #fdfdfd;}
-.flex > article:nth-child(6) { background-color: #f4f4f4;}
+.flex > article:nth-child(6) { background-color: #fdfdfd;}
 
 .more {
     text-decoration: none;
@@ -126,4 +134,9 @@ $screen-lg-min: 992px;
     margin-bottom: 1rem;
     color: #39dae6;
     
+    
+}
+
+.greenish {
+    background-color: #20341b;
 }

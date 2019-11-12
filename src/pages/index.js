@@ -41,7 +41,9 @@ const MainPage = () => {
           <h2>
             <span>Angels </span>in The Attic
           </h2>
-          <p>Floyd, VA</p>
+          <div className={indexStyles.outline}>
+            A non-profit ministry devoted to serving the community through sales of donated items at our stores
+          </div>
         </div>
       </div>
 
@@ -69,49 +71,6 @@ const MainPage = () => {
           <Example />
           <div className={indexStyles.morec}>
             <Link className={indexStyles.more} to="/about">
-              Read More
-            </Link>
-          </div>
-        </article>
-        <article>
-            <FaHandsHelping className={indexStyles.social}></FaHandsHelping>
-          {data.allMarkdownRemark.edges.map((edge, i) => {
-            return (
-              <div key={i}>
-                <h3>{edge.node.frontmatter.titlev}</h3>
-                <p>{edge.node.frontmatter.introv}</p>
-              </div>
-            )
-          })}
-
-          <div className={indexStyles.morec}>
-            <Link className={indexStyles.more} to="/volunteer">
-              Read More
-            </Link>
-          </div>
-        </article>
-        <article>
-            <FaChild className={indexStyles.social}></FaChild>
-          {data.allMarkdownRemark.edges.map((edge, i) => {
-            return (
-              <div key={i}>
-                <h3>{edge.node.frontmatter.titled}</h3>
-          
-                <p>{edge.node.frontmatter.introd}</p>
-                <address>
-    
-    You may also want to visit us:<br></br>
-    Mozilla Foundation<br></br>
-    331 E Evelyn Ave<br></br>
-    Mountain View, CA 94041<br></br>
-    USA
-  </address>
-              </div>
-            )
-          })}
-
-          <div className={indexStyles.morec}>
-            <Link className={indexStyles.more} to="/donate">
               Read More
             </Link>
           </div>
@@ -162,6 +121,51 @@ const MainPage = () => {
         </table>
           <div className={indexStyles.morec}>
             <Link className={indexStyles.more} to="/about">
+              Read More
+            </Link>
+          </div>
+        </article>
+        
+        <article>
+            <FaChild className={indexStyles.social}></FaChild>
+          {data.allMarkdownRemark.edges.map((edge, i) => {
+            return (
+              <div key={i}>
+                <h3>{edge.node.frontmatter.titled}</h3>
+          
+                <p>{edge.node.frontmatter.introd}</p>
+                <address>
+    
+    You may also want to visit us:<br></br>
+    Mozilla Foundation<br></br>
+    331 E Evelyn Ave<br></br>
+    Mountain View, CA 94041<br></br>
+    USA
+  </address>
+              </div>
+            )
+          })}
+
+          <div className={indexStyles.morec}>
+            <Link className={indexStyles.more} to="/donate">
+              Read More
+            </Link>
+          </div>
+        </article>
+        
+        <article>
+            <FaHandsHelping className={indexStyles.social}></FaHandsHelping>
+          {data.allMarkdownRemark.edges.map((edge, i) => {
+            return (
+              <div key={i}>
+                <h3>{edge.node.frontmatter.titlev}</h3>
+                <p>{edge.node.frontmatter.introv}</p>
+              </div>
+            )
+          })}
+
+          <div className={indexStyles.morec}>
+            <Link className={indexStyles.more} to="/volunteer">
               Read More
             </Link>
           </div>

@@ -17,7 +17,7 @@ const SideBar = () => {
           marginRight: '5%'
         },
         bmBurgerBars: {
-          background: '#39dae6'
+          background: '#fffacd'
         },
         bmBurgerBarsHover: {
           background: '#a90000'
