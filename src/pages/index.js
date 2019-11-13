@@ -45,6 +45,10 @@ const MainPage = () => {
         <div className={indexStyles.max}>
         <Logo />
         </div>
+        <div className={indexStyles.center}>
+          <p className={indexStyles.outline}>A non-profit ministry devoted to serving the community through sales of donated items at our stores</p>
+            
+          </div>
         {/* <div className={indexStyles.center}>
           <h2>
             <span>Angels </span>in The Attic

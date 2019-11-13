@@ -15,7 +15,7 @@ export default class Faceex extends Component {
        
         <div>
         
-        <div className="fb-page" data-href="https://www.facebook.com/AngelsintheAtticFloydVa/" data-tabs="timeline" data-width="300" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/AngelsintheAtticFloydVa/" className="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/AngelsintheAtticFloydVa/">Testing</a></blockquote></div>
+        <div className="fb-page" data-href="https://www.facebook.com/AngelsintheAtticFloydVa/" data-tabs="timeline" data-width="400" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/AngelsintheAtticFloydVa/" className="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/AngelsintheAtticFloydVa/">Testing</a></blockquote></div>
         
     
         

@@ -22,7 +22,7 @@ $screen-lg-min: 992px;
     background-color: #292c2f;
     //background-color: #20341b;
     //background-color: #fff;
-    height: 46vh;
+    height: 36vh;
     width: 100%;
     position: absolute;
     top: 0;
@@ -61,8 +61,10 @@ $screen-lg-min: 992px;
     .outline {
         font-style: italic;
         display: inline-block;
-        padding: 0 1rem 2rem 1rem;
+        padding: 1rem 1rem 2rem 1rem;
         max-width: 500px;
+        margin: 0 auto;
+        color: #f4f4f4;
     }
 
    
@@ -78,7 +80,8 @@ $screen-lg-min: 992px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 40vh;
+    margin-top: 35vh;
+    
     
     @include lg {
         padding-left: 5%;

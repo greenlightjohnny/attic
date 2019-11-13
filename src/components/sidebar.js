@@ -12,30 +12,32 @@ const SideBar = () => {
           position: 'fixed',
           width: '36px',
           height: '30px',
-          right: '0px',
+          right: '15px',
           top: '15px',
           marginRight: '5%'
         },
         bmBurgerBars: {
-          background: '#fffacd'
+          background: '#39dae6'
         },
         bmBurgerBarsHover: {
           background: '#a90000'
         },
         bmCrossButton: {
           height: '36px',
-          width: '36px'
+          width: '36px',
+          right: '2rem'
         },
         bmCross: {
           background: 'red',
-          height: '36px'
+          height: '36px',
+          
         },
         bmMenuWrap: {
           position: 'fixed',
           height: '100%'
         },
         bmMenu: {
-          background: '#373a47',
+          background: '#292c2f',
           padding: '2.5em 1.5em 0',
           fontSize: '1.15em'
         },
@@ -52,7 +54,7 @@ const SideBar = () => {
           flexDirection: 'column'
         },
         bmOverlay: {
-          background: 'rgba(0, 0, 0, 0.3)'
+          background: '#292c2f'
         }
       }
       
