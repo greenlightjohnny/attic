@@ -8,6 +8,7 @@ import SEO from '../components/SEO'
 import Logo from '../components/logo'
 import Example from '../components/reface'
 import aboutStyles from './about.module.scss'
+import Faceex from '../components/faceexport'
 
 const MainPage = () => {
   const data = useStaticQuery(graphql`
@@ -75,7 +76,7 @@ const MainPage = () => {
         <article>
             <FaNewspaper className={indexStyles.social}></FaNewspaper>
           <h3>News</h3>
-          <Example />
+          <Faceex />
           <div className={indexStyles.morec}>
             <Link className={indexStyles.more} to="/about">
               Read More
