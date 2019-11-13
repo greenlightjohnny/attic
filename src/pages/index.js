@@ -3,10 +3,10 @@ import Layout from "../components/layout"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import indexStyles from "./index.module.scss"
 import { FaHandsHelping, FaCalendarDay, FaHandHoldingHeart, FaNewspaper, FaChild, FaUserFriends } from 'react-icons/fa'
-import Img from 'gatsby-image'
+//import Img from 'gatsby-image'
 import SEO from '../components/SEO'
 import Logo from '../components/logo'
-import Example from '../components/reface'
+//import Example from '../components/reface'
 import aboutStyles from './about.module.scss'
 import Faceex from '../components/faceexport'
 
