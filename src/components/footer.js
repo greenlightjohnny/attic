@@ -58,7 +58,7 @@ const Footer = () => {
               <label htmlFor="email">Email:</label>
               <input id="email" placeholder="" type="email" name="_replyto" />
               <label htmlFor="message">Message:</label>
-              <textarea name="message" placeholder=""></textarea>
+              <textarea id="message" name="message" placeholder=""></textarea>
               <input className={footerStyles.sendbutton} type="submit" value="Send" />
               
               </form>
