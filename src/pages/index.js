@@ -123,7 +123,7 @@ const MainPage = () => {
             </tr>
             <tr>
               <td>Fridays</td>
-              <td>9am - 7pm</td>
+              <td> 9am - 7pm</td>
             </tr>
             <tr>
               <td>Saturdays</td>

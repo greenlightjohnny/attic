@@ -131,11 +131,14 @@ $screen-lg-min: 992px;
     max-width: 8rem;
     margin-top: 2rem;
     box-shadow: 0 30px 60px -10px rgba(0,0,0,0.3), 0 18px 36px -18px rgba(0,0,0,0.33);
-    transition: transform 0.3s var(--ease-out-quad),box-shadow 0.3s var(--ease-out-quad);
-
+    //transition: transform 0.3s var(--ease-out-quad),box-shadow 0.3s var(--ease-out-quad);
+    transition: ease-in-out all .5s;
 }
 
-
+.more:hover {
+    background-color: #39dae6;
+    color: #000;
+}
 
 .morec {
     margin-top: auto;
@@ -151,8 +154,12 @@ $screen-lg-min: 992px;
     width: 3rem;
     margin-bottom: 1rem;
     color: #39dae6;
+    transition: ease-in-out all .5s;
     
-    
+}
+
+.social:hover {
+    background: #39dae6;
 }
 
 .greenish {
