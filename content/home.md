@@ -23,12 +23,18 @@ introv: >+
 
 titled: Donate
 introd: >-
-  DONATION DROPOFFS. The sole location for dropping off donations of all kinds,
-  and for the Angels Furniture Store, is 112 Needmore Lane, Floyd, VA, which is
-  located on the corner of Route 8 and Needmore Lane next door to the Harvest
-  Moon Food Store. Donations can be dropped off 24 hours a day, every day. Most
-  donations can be placed inside the minibarn storage building in the paved
-  upper driveway. 
+  We need your donations to keep serving the community!
+
+
+  The sole location for donations is: 112 Needmore Lane, Floyd, VA. Located on
+  the corner of Route 8 and Needmore Lane next door to the Harvest Moon Food
+  Store. Donations can be dropped off 24 hours a day, every day. Most donations
+  can be placed inside the minibarn storage building in the paved upper
+  driveway. 
+
+
+  For guidelines on what kind of items we can accept, please click below to
+  visit our donation information page.
 titleh: Hours
 introh: |-
   Tuesdays – 9:00am to 4:00pm
