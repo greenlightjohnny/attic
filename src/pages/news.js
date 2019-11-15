@@ -20,11 +20,7 @@ const News = () => {
         }
       }
     `)
-    const myhtml = {data.allMarkdownRemark.edges.map((edge, i) => {
-        return (
-            {}
-        )
-    })}
+  
     return (
         <Layout>
             <SEO title="news"/>
@@ -32,7 +28,7 @@ const News = () => {
             return (
               <div key={i}>
                 <h3>{edge.node.frontmatter.titlef}</h3>
-                <div dangerouslySetInnerHTML={__html: {edge.node.html}}></div>
+                <div dangerouslySetInnerHTML={{__html: edge.node.html}}></div>
               </div>
             )
           })}
