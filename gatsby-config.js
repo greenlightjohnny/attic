@@ -26,6 +26,7 @@ module.exports = {
         name: 'images'
       }
     },
+   
 
     {
       resolve: `gatsby-source-filesystem`,
@@ -33,6 +34,14 @@ module.exports = {
         path: `${__dirname}/content`,
         name: `markdown-pages`,
       },
+    },
+
+    {
+      resolve: 'gatsby-source-contentful',
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
+      }
     },
 
     {
@@ -54,6 +63,7 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-transformer-remark',
     `gatsby-plugin-react-helmet`,
+    `@contentful/gatsby-transformer-contentful-richtext`,
 
     // {
     //   resolve: `gatsby-plugin-facebook-analytics`,

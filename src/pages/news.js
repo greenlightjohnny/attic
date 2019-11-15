@@ -3,39 +3,27 @@ import Layout from '../components/layout'
 import { useStaticQuery, graphql } from 'gatsby'
 
 import SEO from '../components/SEO'
-const News = () => {
 
-    const data = useStaticQuery(graphql`
-    query {
-        allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/(home)/" } }) {
-          edges {
-            node {
-              html
-              
-              frontmatter {
-                titlef
+
+    export const query = graphql`
+        {
+           about: allContentfulAngelsAboutPage {
+                nodes {
+                  slug
+                  title
+                }
               }
-            }
-          }
         }
-      }
-    `)
-  
-    return (
-        <Layout>
-            <SEO title="news"/>
-            {data.allMarkdownRemark.edges.map((edge, i) => {
-            return (
-              <div key={i}>
-                <h3>{edge.node.frontmatter.titlef}</h3>
-                <div dangerouslySetInnerHTML={{__html: edge.node.html}}></div>
-              </div>
-            )
-          })}
-    </Layout>
-    )
-}
-    
-    
+    `
 
-export default News
+
+    export default ({ data }) => (
+        <Layout>
+            {data.about.nodes.map(about => (
+                <div key={`about-${about.slug}`}>
+                    <h2>{about.title}</h2>
+                </div>
+            ))}
+        </Layout>
+    )
+        
