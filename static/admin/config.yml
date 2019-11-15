@@ -1,8 +1,8 @@
 # In your static/admin/config.yml file
 
-backend: 
-    name: github
-    repo: oNtAiR/attic
+backend:
+  name: github
+  repo: oNtAiR/attic
 
 media_folder: static/assets
 public_folder: assets
@@ -15,36 +15,33 @@ collections:
         name: "home"
         file: "content/home.md"
         fields:
-          - {label: Intro title, name: title, widget: string}
-          - {label: Intro text, name: intro, widget: text}
-          - {label: Volunteer title, name: titlev, widget: string}
-          - {label: Volunteer text, name: introv, widget: text}
-          - {label: Donate title, name: titled, widget: string}
-          - {label: Donate text, name: introd, widget: text}
-          - {label: Hours title, name: titleh, widget: string}
-          - {label: Hours text, name: introh, widget: text}
-          - {label: Friends title, name: titlef, widget: string}
-          - {label: Friends body, name: introf, widget: text}
-          - {label: Body title, name: titleb, widget: string}
-          - {label: Body, name: body, widget: markdown}
+          - { label: Intro title, name: title, widget: string }
+          - { label: Intro text, name: intro, widget: text }
+          - { label: Volunteer title, name: titlev, widget: string }
+          - { label: Volunteer text, name: introv, widget: text }
+          - { label: Donate title, name: titled, widget: string }
+          - { label: Donate text, name: body, widget: markdown }
+          - { label: Hours title, name: titleh, widget: string }
+          - { label: Hours text, name: introh, widget: text }
+          - { label: Friends title, name: titlef, widget: string }
+          - { label: Friends body, name: introf, widget: text }
+          - { label: Body title, name: titleb, widget: string }
+          - { label: Body, name: body, widget: markdown }
+          - label: "Team"
+            name: "team"
 
-      
-
+            widget: list
+            fields:
+              - { label: Title, name: name, widget: string }
+              - { label: Team Body, name: body, widget: markdown }
 
       - label: "About Page"
         name: "about"
         file: "content/about.md"
         fields:
-          - {label: About title, name: title, widget: string}
-          - {label: About text, name: introa, widget: text}
-          - {label: History title, name: history, widget: string}
-          - {label: History text, name: historytext, widget: text} 
-          - {label: Donations title, name: donations, widget: string}
-          - {label: Donations text, name: donationstext, widget: text} 
-          
-          
-          
-
-      
-  
-  
+          - { label: About title, name: title, widget: string }
+          - { label: About text, name: introa, widget: text }
+          - { label: History title, name: history, widget: string }
+          - { label: History text, name: historytext, widget: text }
+          - { label: Donations title, name: donations, widget: string }
+          - { label: Donations text, name: donationstext, widget: text }
