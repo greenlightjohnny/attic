@@ -23,7 +23,7 @@ const MainPage = () => {
               introv
               titlev
               titled
-              introd
+              
               titleh
               introh
               titlef
