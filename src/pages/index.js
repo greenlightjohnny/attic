@@ -16,6 +16,7 @@ const MainPage = () => {
       allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/(home)/"}}) {
         edges {
           node {
+            html
             frontmatter {
               title
               intro
@@ -27,6 +28,7 @@ const MainPage = () => {
               introh
               titlef
               introf
+              titleb
             }
           }
         }
@@ -187,8 +189,8 @@ const MainPage = () => {
           {data.allMarkdownRemark.edges.map((edge, i) => {
             return (
               <div key={i}>
-                <h3>{edge.node.frontmatter.titlef}</h3>
-                <p>{edge.node.frontmatter.introf}</p>
+                <h3>{edge.node.frontmatter.titleb}</h3>
+                <p dangerouslySetInnerHTML={{__html: edge.node.html}}></p>
               </div>
             )
           })}

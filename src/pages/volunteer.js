@@ -18,7 +18,10 @@ const Volunteer = () => {
                 }
             }
         }
-    `)
+       
+        `)
+
+       
     return (
         <Layout>
             <SEO title="Volunteer" />
@@ -52,7 +55,9 @@ Inquire at any of the Angels in the Attic Stores during operating hours
                 
             </article>
 
-            <article className={aboutStyles.section}></article>
+            <article className={aboutStyles.section}>
+               
+            </article>
 
             </section>
                 

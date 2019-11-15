@@ -28,6 +28,14 @@ module.exports = {
     },
 
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/content`,
+        name: `markdown-pages`,
+      },
+    },
+
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Angels in The Attic`,
