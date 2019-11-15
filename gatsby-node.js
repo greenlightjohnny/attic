@@ -17,7 +17,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     result.data.allContentfulBlog.nodes.forEach(blog => {
         actions.createPage({
             path: `/${blog.slug}/`,
-            template: require.resolve('./src/template/blog.js'),
+            component: require.resolve('./src/template/blog.js'),
             context: {
                 slug: blog.slug,
             },
