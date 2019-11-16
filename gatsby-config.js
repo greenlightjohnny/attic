@@ -68,7 +68,15 @@ module.exports = {
     },
     
       
-       
+    {
+      resolve: "gatsby-plugin-preconnect",
+      options: {
+        domains: [
+          "https://connect.facebook.net",
+          
+        ]
+      }
+    },
     
     'gatsby-plugin-offline',
     'gatsby-transformer-sharp',
