@@ -1,46 +1,70 @@
 import React from "react"
 import Layout from "../components/layout"
-import { Link, useStaticQuery, graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import indexStyles from "./index.module.scss"
 import { FaHandsHelping, FaCalendarDay, FaHandHoldingHeart, FaNewspaper, FaChild, FaUserFriends } from 'react-icons/fa'
-//import Img from 'gatsby-image'
+
 import SEO from '../components/SEO'
 import Logo from '../components/logo'
-//import Example from '../components/reface'
-import aboutStyles from './about.module.scss'
-import Faceex from '../components/faceexport'
 
-const MainPage = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/(home)/"}}) {
-        edges {
-          node {
-            html
-            frontmatter {
-              title
-              intro
-              introv
-              titlev
-              titled
+//import aboutStyles from './about.module.scss'
+import Faceex from '../components/faceexport'
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
+// const MainPage = () => {
+//   const data = useStaticQuery(graphql`
+//     query {
+//       allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/(home)/"}}) {
+//         edges {
+//           node {
+//             html
+//             frontmatter {
+//               title
+//               intro
+//               introv
+//               titlev
+//               titled
               
-              titleh
-              introh
-              titlef
-              introf
-              titleb
-            }
-          }
-        }
-      }
-    }
+//               titleh
+//               introh
+//               titlef
+//               introf
+//               titleb
+//             }
+//           }
+//         }
+//       }
+//     }
 
     
-  `)
+//   `)
 
+export const query = graphql`
+{
+    about: contentfulAngelsHomePage {
+         
+           
+           aboutTitle
+           donateTitle
+           donateBody {
+             json
+           }
+           aboutBody {
+               json
+           }
+           hours
+           hoursBody {
+             json
+           }
+           volunteerTitle
+           volunteerBody {
+             json
+           }
+       }
+ }
+`
   
-
-  return (
+export default ({ data }) => (
+  
     <Layout>
         <SEO title="Home"/>
       <div className={indexStyles.background}>
@@ -64,15 +88,8 @@ const MainPage = () => {
       <section className={indexStyles.flex}>
         <article>
             <FaHandHoldingHeart className={indexStyles.social}></FaHandHoldingHeart>
-          {data.allMarkdownRemark.edges.map((edge, i) => {
-            return (
-              <div key={i}>
-                <h3>{edge.node.frontmatter.title}</h3>
-                <p>{edge.node.frontmatter.intro}</p>
-              </div>
-            )
-          })}
-
+            <h3>{data.about.aboutTitle}</h3>
+            <div>{documentToReactComponents(data.about.aboutBody.json)}</div>
           <div className={indexStyles.morec}>
             <Link className={indexStyles.more} to="/about">
               Read More
@@ -84,14 +101,16 @@ const MainPage = () => {
           <h3>News</h3>
           <Faceex />
           <div className={indexStyles.morec}>
-            <Link className={indexStyles.more} to="/about">
-              Read More
-            </Link>
+            <a className={indexStyles.more} aria-label="Facebook" href="https://www.facebook.com/AngelsintheAtticFloydVa/">
+              Facebook
+            </a>
           </div>
         </article>
         <article>
             <FaCalendarDay className={indexStyles.social}></FaCalendarDay>
-            <h3>Hours</h3>
+            <h3>{data.about.hours}</h3>
+            <div>{documentToReactComponents(data.about.hoursBody.json)}</div>
+            {/* <h3>Hours</h3>
             <table className={aboutStyles.table}>
           <tbody>
             <tr>
@@ -132,68 +151,41 @@ const MainPage = () => {
               <td>10am - 2pm</td>
             </tr>
           </tbody>
-        </table>
+        </table> */}
           <div className={indexStyles.morec}>
-            <Link className={indexStyles.more} to="/about">
-              Read More
+            <Link className={indexStyles.more} to="/hours">
+              Hours
             </Link>
           </div>
         </article>
         
         <article>
             <FaChild className={indexStyles.social}></FaChild>
-          {data.allMarkdownRemark.edges.map((edge, i) => {
-            return (
-              <div key={i}>
-                <h3>{edge.node.frontmatter.titled}</h3>
-          
-                <p>{edge.node.frontmatter.introd}</p>
-                <address>
-    
-    You may also want to visit us:<br></br>
-    Mozilla Foundation<br></br>
-    331 E Evelyn Ave<br></br>
-    Mountain View, CA 94041<br></br>
-    USA
-  </address>
-              </div>
-            )
-          })}
+              
+           
+            <h3>{data.about.donateTitle}</h3>
+            <div>{documentToReactComponents(data.about.donateBody.json)}</div>
 
           <div className={indexStyles.morec}>
             <Link className={indexStyles.more} to="/donate">
-              Read More
+              Donate
             </Link>
           </div>
         </article>
         
         <article>
             <FaHandsHelping className={indexStyles.social}></FaHandsHelping>
-          {data.allMarkdownRemark.edges.map((edge, i) => {
-            return (
-              <div key={i}>
-                <h3>{edge.node.frontmatter.titlev}</h3>
-                <p>{edge.node.frontmatter.introv}</p>
-              </div>
-            )
-          })}
-
+            <h3>{data.about.volunteerTitle}</h3>
+            <div>{documentToReactComponents(data.about.volunteerBody.json)}</div>
           <div className={indexStyles.morec}>
             <Link className={indexStyles.more} to="/volunteer">
-              Read More
+              Volunteer
             </Link>
           </div>
         </article>
         <article>
             <FaUserFriends className={indexStyles.social}></FaUserFriends>
-          {data.allMarkdownRemark.edges.map((edge, i) => {
-            return (
-              <div key={i}>
-                <h3>{edge.node.frontmatter.titleb}</h3>
-                <p dangerouslySetInnerHTML={{__html: edge.node.html}}></p>
-              </div>
-            )
-          })}
+          
           <div className={indexStyles.morec}>
             <Link className={indexStyles.more} to="/donate">
               Read More
@@ -202,7 +194,7 @@ const MainPage = () => {
         </article>
       </section>
     </Layout>
-  )
-}
+  
+)
 
-export default MainPage
+

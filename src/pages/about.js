@@ -1,31 +1,33 @@
 import React from 'react'
 import Layout from '../components/layout'
 import aboutStyles from './about.module.scss'
-import { useStaticQuery, graphql } from "gatsby"
-
+import { graphql } from "gatsby"
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import SEO from '../components/SEO'
 
 
 export const query = graphql`
 {
-    about: allContentfulAngelsAboutPage {
-         nodes {
+    about: contentfulAngelsAboutPage {
+         
            slug
            title
-         }
+           body {
+               json
+           }
        }
  }
 `
 
 export default ({ data }) => (
     <Layout>
-        
-            {data.about.nodes.map(about => (
-                <div className={aboutStyles.container}>
-                <h1>{about.title}</h1>
-                <p>testing testing</p>
+        <SEO title="about" />
+            <div className={aboutStyles.container}>
+                <h1>{data.about.title}</h1>
+                <div className={aboutStyles.section}>
+                    {documentToReactComponents(data.about.body.json)}
                 </div>
-            ))}
+            </div>
                 
     </Layout>
 )

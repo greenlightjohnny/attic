@@ -1,8 +1,8 @@
 import React from 'react'
 import Layout from '../components/layout'
-import { useStaticQuery, graphql } from 'gatsby'
+import {  graphql } from 'gatsby'
 
-import SEO from '../components/SEO'
+//import SEO from '../components/SEO'
 
 
     export const query = graphql`

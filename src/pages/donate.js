@@ -1,70 +1,31 @@
 import React from "react"
 import aboutStyles from "./about.module.scss"
 import Layout from "../components/layout"
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
+import { graphql } from 'gatsby'
 
-const Donate = () => {
-  return (
+export const query = graphql`
+{
+    about: contentfulAngelsDonatePage {
+         
+           slug
+           title
+           body {
+               json
+           }
+       }
+ }
+`
+
+export default ({ data }) => (
+  
     <Layout>
       <div className={aboutStyles.container}>
-        <h1>Donations</h1>
-        <p>
-          DONATION DROPOFFS. The sole location for dropping off donations of all
-          kinds, and for the Angels Furniture Store, is 112 Needmore Lane,
-          Floyd, VA, which is located on the corner of Route 8 and Needmore Lane
-          next door to the Harvest Moon Food Store. Donations can be dropped off
-          24 hours a day, every day. Most donations can be placed inside the
-          minibarn storage building in the paved upper driveway. If left
-          outside, the weather is most likely to damage them. Furniture
-          donations can be placed on the concrete pad (under the overhang of the
-          large building) located at the end of the lower gravel driveway which
-          is just below the house, but it is preferred you do so during open
-          hours.
-        </p>
-
-        <table className={aboutStyles.table}>
-          <tbody>
-            <tr>
-              <th>Angels in The Attic</th>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Tuesday</td>
-              <td>9am - 4pm</td>
-            </tr>
-            <tr>
-              <td>Fridays</td>
-              <td>9am - 7pm</td>
-            </tr>
-            <tr>
-              <td>Saturdays</td>
-              <td>9am - 2pm</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <table className={aboutStyles.table}>
-          <tbody>
-            <tr>
-              <th>Angels Botique</th>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Tuesday</td>
-              <td>10am - 4pm</td>
-            </tr>
-            <tr>
-              <td>Fridays</td>
-              <td>9am - 7pm</td>
-            </tr>
-            <tr>
-              <td>Saturdays</td>
-              <td>10am - 2pm</td>
-            </tr>
-          </tbody>
-        </table>
+       <h1>{data.about.title}</h1>
+       <div>{documentToReactComponents(data.about.body.json)}</div>
       </div>
     </Layout>
-  )
-}
+  
 
-export default Donate
+)
+
