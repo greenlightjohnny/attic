@@ -66,9 +66,17 @@ module.exports = {
         icon: `src/images/icon.png`
       },
     },
-
+    {
+      resolve: "gatsby-plugin-preconnect",
+      options: {
+        domains: [
+          "https://connect.facebook.net",
+        ],
+      },
+    },
+      
+    'gatsby-plugin-preload-link-crossorigin',
     'gatsby-plugin-offline',
-
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     'gatsby-transformer-remark',
