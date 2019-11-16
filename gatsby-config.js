@@ -77,35 +77,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `@contentful/gatsby-transformer-contentful-richtext`,
 
-    // {
-    //   resolve: `gatsby-plugin-facebook-analytics`,
-    //   options: {
-    //     // Required - set this to the ID of your Facebook app.
-    //     appId: `2518108111807119`,
-  
-    //     // Which version of the SDK to load.
-    //     version: `v5.0`,
-  
-    //     // Determines whether XFBML tags used by social plugins are parsed.
-    //     xfbml: true,
-  
-    //     // Determines whether a cookie is created for the session or not.
-    //     cookie: false,
-  
-    //     // Include Facebook analytics in development.
-    //     // Defaults to false meaning the library will only be loaded in production.
-    //     includeInDevelopment: true,
-  
-    //     // Include debug version of sdk
-    //     // Defaults to false meaning the library will load sdk.js
-    //     debug: false,
-  
-    //     // Select your language.
-    //     language: `en_US`,
-    //   },
-    // },
-
-    ////FACEBOOK
+    
     {
       resolve: `gatsby-plugin-facebook-sdk`,
       options: {
