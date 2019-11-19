@@ -109,7 +109,7 @@ export default ({ data }) => (
         <article>
             <FaCalendarDay className={indexStyles.social}></FaCalendarDay>
             <h3>{data.about.hours}</h3>
-            <div>{documentToReactComponents(data.about.hoursBody.json)}</div>
+            <div className={indexStyles.inline}>{documentToReactComponents(data.about.hoursBody.json)}</div>
             {/* <h3>Hours</h3>
             <table className={aboutStyles.table}>
           <tbody>
