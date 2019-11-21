@@ -13,6 +13,12 @@ export const query = graphql`
            body {
                json
            }
+           photo {
+               fluid(maxWidth: 700) {
+                ...GatsbyContentfulFluid
+               }
+               
+           }
        }
  }
 `
