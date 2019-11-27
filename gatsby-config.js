@@ -88,6 +88,7 @@ module.exports = {
     `@contentful/gatsby-transformer-contentful-richtext`,
     `gatsby-plugin-sitemap`,
     'gatsby-plugin-robots-txt',
+    `gatsby-plugin-netlify`,
 
     
     {
