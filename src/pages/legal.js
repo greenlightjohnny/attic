@@ -4,6 +4,7 @@ import SEO from '../components/SEO'
 import aboutStyles from './about.module.scss'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
 export const query = graphql`
 {
     about: contentfulLegal {

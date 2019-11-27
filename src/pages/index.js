@@ -72,7 +72,7 @@ export default ({ data }) => (
         <Logo />
         </div>
         <div className={indexStyles.center}>
-          <p className={indexStyles.outline}>A non-profit ministry devoted to serving the community through sales of donated items at our stores</p>
+          <h1 className={indexStyles.outline}>A non-profit ministry devoted to serving the community through sales of donated items at our stores</h1>
             
           </div>
         {/* <div className={indexStyles.center}>
@@ -88,7 +88,7 @@ export default ({ data }) => (
       <section className={indexStyles.flex}>
         <article>
             <FaHandHoldingHeart className={indexStyles.social}></FaHandHoldingHeart>
-            <h3>{data.about.aboutTitle}</h3>
+            <h2>{data.about.aboutTitle}</h2>
             <div>{documentToReactComponents(data.about.aboutBody.json)}</div>
           <div className={indexStyles.morec}>
             <Link className={indexStyles.more} to="/about">

@@ -84,6 +84,8 @@ module.exports = {
     'gatsby-transformer-remark',
     `gatsby-plugin-react-helmet`,
     `@contentful/gatsby-transformer-contentful-richtext`,
+    `gatsby-plugin-sitemap`,
+    'gatsby-plugin-robots-txt',
 
     
     {
