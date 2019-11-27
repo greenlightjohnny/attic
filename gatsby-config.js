@@ -15,6 +15,7 @@ module.exports = {
     url: "https://focused-volhard-dee302.netlify.com/",
     image: "/src/images/logos.png",
     titleTemplate: "%s | Angels in The Attic",
+    siteUrl: `https://www.highultimate.com/`,
   },
   plugins: [
     `gatsby-plugin-sass`,
