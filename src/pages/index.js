@@ -154,7 +154,7 @@ export default ({ data }) => (
         </table> */}
           <div className={indexStyles.morec}>
             <Link className={indexStyles.more} to="/hours">
-              Hours
+              Read More
             </Link>
           </div>
         </article>

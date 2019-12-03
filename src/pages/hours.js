@@ -4,7 +4,7 @@ import aboutStyles from './about.module.scss'
 import { graphql } from "gatsby"
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import SEO from '../components/SEO'
-
+import SimpleMap from '../components/gmap'
  export const query = graphql`
  {
     about: contentfulHours {
@@ -26,6 +26,11 @@ import SEO from '../components/SEO'
              <div>
                  {documentToReactComponents(data.about.body.json)}
              </div>
+             <h2>Locations:</h2>
+             <p> 210 South Locust Street<br></br>
+                Floyd, VA 24091</p>
+                
+            <SimpleMap />
          </div>
      </Layout>
  )

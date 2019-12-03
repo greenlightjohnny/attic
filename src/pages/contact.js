@@ -4,6 +4,7 @@ import SimpleMap from '../components/gmap'
 import SEO from '../components/SEO'
 import aboutStyles from "./about.module.scss"
 
+
 const Contact = () => {
     return (
         <Layout>
@@ -15,6 +16,8 @@ const Contact = () => {
                 
             <SimpleMap />
             </div>
+
+
         </Layout>
     )
 }

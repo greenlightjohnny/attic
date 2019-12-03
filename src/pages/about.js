@@ -5,7 +5,6 @@ import { graphql } from "gatsby"
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import SEO from '../components/SEO'
 
-
 export const query = graphql`
 {
     about: contentfulAngelsAboutPage {
