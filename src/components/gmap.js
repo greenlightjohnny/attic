@@ -6,12 +6,14 @@ const Gmap = ({ text }) => <div>{text}</div>;
 class SimpleMap extends Component {
     static defaultProps = {
         center: {
-            lat: 59.95,
-            lng: 30.33
+            lat: 36.915519,
+            lng: -80.321161
         },
-        zoom: 11,
+        zoom: 17,
     };
-
+    componentDidMount() {
+       
+    }
     render() {
         return (
             <div style={{ height: '100vh', width: '100%'}}>
@@ -22,8 +24,9 @@ class SimpleMap extends Component {
                 >
                     <Gmap
                     lat={36.915519}
-                    lng={80.321161}
-                    text="Angels"
+                    lng={-80.321161}
+                    text={'Angels'}
+                    zoom={11}
                     />
                 </GoogleMapReact>
             </div>
