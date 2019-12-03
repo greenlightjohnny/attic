@@ -187,8 +187,8 @@ export default ({ data }) => (
             <FaUserFriends className={indexStyles.social}></FaUserFriends>
           
           <div className={indexStyles.morec}>
-            <Link className={indexStyles.more} to="/donate">
-              Read More
+            <Link className={indexStyles.more} to="/contact">
+              Location
             </Link>
           </div>
         </article>
