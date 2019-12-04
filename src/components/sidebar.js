@@ -67,7 +67,8 @@ const SideBar = () => {
                    
                     <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}  to="/Volunteer">Volunteer </Link>
                     <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}  to="/donate">Donate </Link>
-                    <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}  to="/Hours">Hours, Location</Link>
+                    <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}  to="/hours">Hours</Link>
+                    <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}  to="/hours">Locations</Link>
                 
             
       </Menu>
