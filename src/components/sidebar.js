@@ -21,7 +21,9 @@ const SideBar = () => {
           background: '#39dae6'
         },
         bmBurgerBarsHover: {
-          background: '#a90000'
+          background: '#5eecf7',
+          opacity: '1',
+          color: '#5eecf7'
         },
         bmCrossButton: {
           height: '36px',
@@ -65,7 +67,7 @@ const SideBar = () => {
                 
                     <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/about">About </Link>
                    
-                    <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}  to="/Volunteer">Volunteer </Link>
+                    <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}  to="/volunteer">Volunteer </Link>
                     <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}  to="/donate">Donate </Link>
                     <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}  to="/hours">Hours</Link>
                     <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}  to="/hours">Locations</Link>
