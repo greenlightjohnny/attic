@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import { Link, graphql } from "gatsby"
 import indexStyles from "./index.module.scss"
 import { FaHandsHelping, FaCalendarDay, FaHandHoldingHeart, FaNewspaper, FaChild, FaUserFriends } from 'react-icons/fa'
-
+import Example from '../components/reactfb'
 import SEO from '../components/SEO'
 import Logo from '../components/logo'
 
@@ -100,7 +100,7 @@ export default ({ data }) => (
             <FaNewspaper className={indexStyles.social}></FaNewspaper>
           <h3>News</h3>
           <div className={indexStyles.fbcon}>
-          <Faceex />
+          <Example />
           </div>
           
           <div className={indexStyles.morec}>
