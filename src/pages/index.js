@@ -186,7 +186,7 @@ export default ({ data }) => (
             </Link>
           </div>
         </article>
-        <article>
+        {/* <article>
             <FaUserFriends className={indexStyles.social}></FaUserFriends>
           
           <div className={indexStyles.morec}>
@@ -194,7 +194,7 @@ export default ({ data }) => (
               Location
             </Link>
           </div>
-        </article>
+        </article> */}
       </section>
     </Layout>
   
