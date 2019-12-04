@@ -91,15 +91,15 @@ module.exports = {
     `gatsby-plugin-netlify`,
 
     
-    {
-      resolve: `gatsby-plugin-facebook-sdk`,
-      options: {
-        appId: '2518108111807119',
-        autoLogAppEvents: true,
-        xfbml: true,
-        version: 'v5.0'
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-facebook-sdk`,
+    //   options: {
+    //     appId: '2518108111807119',
+    //     autoLogAppEvents: true,
+    //     xfbml: true,
+    //     version: 'v5.0'
+    //   },
+    // },
 
     {
       resolve: `gatsby-source-filesystem`,

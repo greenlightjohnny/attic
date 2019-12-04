@@ -8,7 +8,7 @@ import SEO from '../components/SEO'
 import Logo from '../components/logo'
 
 //import aboutStyles from './about.module.scss'
-import Faceex from '../components/faceexport'
+//import Faceex from '../components/faceexport'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 // const MainPage = () => {
 //   const data = useStaticQuery(graphql`
