@@ -143,9 +143,13 @@ $screen-lg-min: 992px;
 }
 
 .fbcon {
-    width: 340px;
+    max-width: 500px;
+    min-width: 300px;
     margin: 0 auto;
     
+    @include lg {
+        min-width: 350px;
+    }
 }
 
 .inline {
