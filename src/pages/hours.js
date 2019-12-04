@@ -5,6 +5,7 @@ import { graphql } from "gatsby"
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import SEO from '../components/SEO'
 import SimpleMap from '../components/gmap'
+import GoogleMap from '../components/somap2'
  export const query = graphql`
  {
     about: contentfulHours {
@@ -30,7 +31,9 @@ import SimpleMap from '../components/gmap'
              <p> 210 South Locust Street<br></br>
                 Floyd, VA 24091</p>
                 
-            <SimpleMap />
+           
+            <GoogleMap />
          </div>
+         
      </Layout>
  )

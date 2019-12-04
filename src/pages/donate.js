@@ -3,6 +3,7 @@ import aboutStyles from "./about.module.scss"
 import Layout from "../components/layout"
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { graphql } from 'gatsby'
+import { animations } from '../components/transition'
 
 export const query = graphql`
 {
@@ -20,6 +21,7 @@ export const query = graphql`
 export default ({ data }) => (
   
     <Layout>
+
       <div className={aboutStyles.container}>
        <h1>{data.about.title}</h1>
        <div>{documentToReactComponents(data.about.body.json)}</div>

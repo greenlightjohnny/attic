@@ -29,7 +29,7 @@ const Footer = () => {
 
                 <div className={footerStyles.left}>
                  <FaPhone className={footerStyles.social} /> <a href="tel:+1-303-499-7111">+1 (303) 499-7111</a><br></br>
-                <FaEnvelope className={footerStyles.social}/><a href="mailto:info@angelsintheattic.com">info@angelsintheattic.com</a><br></br>
+                <FaEnvelope className={footerStyles.social}/><a href="mailto:info@angelsintheattic.com">info@angelsintheattic.org</a><br></br>
                 <a aria-label="Facebook" href="https://www.facebook.com/AngelsintheAtticFloydVa/">
                 <FaFacebook className={footerStyles.social} />Facebook
                 </a>
@@ -45,8 +45,8 @@ const Footer = () => {
                     <li><Link to='/about'>About</Link></li>
                     <li><Link to='/volunteer'>Volunteer</Link></li>
                     <li><Link to='/donate'>Donate</Link></li>
-                    <li><Link to='/legal'>Legal</Link></li>
-                    <li><Link to='/contact'>Contact</Link></li>
+                    <li><Link to='/legal'>Hours, Location</Link></li>
+                    
                 </ul>
             </nav>
             

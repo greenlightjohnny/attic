@@ -99,7 +99,10 @@ export default ({ data }) => (
         <article>
             <FaNewspaper className={indexStyles.social}></FaNewspaper>
           <h3>News</h3>
+          <div className={indexStyles.fbcon}>
           <Faceex />
+          </div>
+          
           <div className={indexStyles.morec}>
             <a className={indexStyles.more} aria-label="Facebook" href="https://www.facebook.com/AngelsintheAtticFloydVa/">
               Facebook
