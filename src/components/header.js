@@ -19,7 +19,7 @@ const Header = () => {
         }
     }
 `)
-    return (
+    return ( 
         
         <header className={headerStyles.header}>
                 

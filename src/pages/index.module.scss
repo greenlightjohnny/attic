@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Courgette|Righteous&display=swap');
 // Tablets and small desktops
 $screen-lg-min: 992px;
 
@@ -8,7 +8,7 @@ $screen-lg-min: 992px;
         @content;
     }
   }
-  :root {
+  :root { 
     --ease-in-quad: cubic-bezier(0.55,0.085,0.68,0.53);
     --ease-in-quart: cubic-bezier(0.895,0.03,0.685,0.22);
     --ease-out-quad: cubic-bezier(0.25,0.46,0.45,0.94);
@@ -25,8 +25,9 @@ $screen-lg-min: 992px;
     //background-repeat: no-repeat;
     //background-attachment: fixed;
     background-color: #292c2f;
-    //background-color: #20341b;
-    //background-color: #fff;
+     //background-color: #20341b;
+    //background-color: #fffffe;
+    //background-color: transparent;
     //height: 36vh;
     width: 100%;
     //position: absolute;
@@ -67,14 +68,17 @@ $screen-lg-min: 992px;
         font-family: "amita";
     }
 
-    .outline {
-        font-style: italic;
+    p {
+        
+              //font-style: italic;
         display: inline-block;
         padding: 1rem 1rem 2rem 1rem;
         max-width: 500px;
         margin: 0 auto;
         color: #f4f4f4;
         font-size: 1rem;
+        
+      
     }
 
    
@@ -84,6 +88,21 @@ $screen-lg-min: 992px;
     margin: 0 auto;
     padding-left: 1rem;
     padding-right: 1rem;
+    text-align: center;
+    
+   
+
+    h1 {
+        font-family: 'Courgette';
+        color: #272343;
+        color: #2b8ad3;
+        //color: #dabe2e;
+        
+        font-size: 3rem;
+    }
+
+
+
 }
 
 .flex {
@@ -109,6 +128,7 @@ $screen-lg-min: 992px;
         box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 5px 0px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px;
         margin-bottom: 2rem;
         transition: all 0.3s ease 0s;
+        background-color: #ffc6c7;
 
         @include lg {
             min-width: 390px;
@@ -116,9 +136,9 @@ $screen-lg-min: 992px;
         }
         h3, h2 {
             text-align: center;
-            color: #000;
+            color: #272343;
             font-size: 2rem;
-            font-family: 'amita';
+            font-family: 'Courgette';
             font-weight: bold;
            // text-underline-position: below;
             //text-decoration-style: wavy;
@@ -172,8 +192,8 @@ $screen-lg-min: 992px;
     }
 }
 
-.flex > article:nth-child(1) { background-color: #fdfdfd;}
-.flex > article:nth-child(2) { background-color:#fdfdfd;}
+.flex > article:nth-child(1) { background-color: #fdfdfd}
+.flex > article:nth-child(2) { background-color:#fdfdfd}
 .flex > article:nth-child(3) { background-color: #fdfdfd;}
 .flex > article:nth-child(4) { background-color: #fdfdfd;}
 .flex > article:nth-child(5) { background-color: #fdfdfd;}
@@ -217,7 +237,10 @@ $screen-lg-min: 992px;
     height: 3rem;
     width: 3rem;
     margin-bottom: 1rem;
-    color: #39dae6;
+    //color: #39dae6;
+    //color: #6246ea;
+    color: #3da9fc;
+    
     //transition: ease-in-out all .5s;
    
 }

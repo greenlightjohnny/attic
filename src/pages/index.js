@@ -6,6 +6,7 @@ import { FaHandsHelping, FaCalendarDay, FaHandHoldingHeart, FaNewspaper, FaChild
 import Example from '../components/reactfb'
 import SEO from '../components/SEO'
 import Logo from '../components/logo'
+import Map from '../components/gmap'
 
 //import aboutStyles from './about.module.scss'
 //import Faceex from '../components/faceexport'
@@ -61,7 +62,7 @@ export const query = graphql`
            }
        }
  }
-`
+` 
   
 export default ({ data }) => (
   
@@ -69,10 +70,11 @@ export default ({ data }) => (
         <SEO title="Home"/>
       <div className={indexStyles.background}>
         <div className={indexStyles.max}>
-        <Logo />
+         <Logo />
+        {/* <h1>Angels in The Attic</h1> */}
         </div>
         <div className={indexStyles.center}>
-          <h1 className={indexStyles.outline}>A non-profit ministry devoted to serving the community through sales of donated items at our stores</h1>
+          <p className={indexStyles.outline}>A non-profit ministry devoted to serving the community through sales of donated items at our stores</p>
             
           </div>
         {/* <div className={indexStyles.center}>
@@ -96,19 +98,7 @@ export default ({ data }) => (
             </Link>
           </div>
         </article>
-        <article>
-            <FaNewspaper className={indexStyles.social}></FaNewspaper>
-          <h3>News</h3>
-          <div className={indexStyles.fbcon}>
-          <Example />
-          </div>
-          
-          <div className={indexStyles.morec}>
-            <a className={indexStyles.more} aria-label="Facebook" href="https://www.facebook.com/AngelsintheAtticFloydVa/">
-              Facebook
-            </a>
-          </div>
-        </article>
+        
         <article>
             <FaCalendarDay className={indexStyles.social}></FaCalendarDay>
             <h3>{data.about.hours}</h3>
@@ -186,6 +176,21 @@ export default ({ data }) => (
             </Link>
           </div>
         </article>
+
+
+        <article>
+            <FaNewspaper className={indexStyles.social}></FaNewspaper>
+          <h3>News</h3>
+          <div className={indexStyles.fbcon}>
+          <Example />
+          </div>
+          
+          <div className={indexStyles.morec}>
+            <a className={indexStyles.more} aria-label="Facebook" href="https://www.facebook.com/AngelsintheAtticFloydVa/">
+              Facebook
+            </a>
+          </div>
+        </article>
         {/* <article>
             <FaUserFriends className={indexStyles.social}></FaUserFriends>
           
@@ -195,6 +200,10 @@ export default ({ data }) => (
             </Link>
           </div>
         </article> */}
+      </section>
+
+      <section className={indexStyles.location}>
+        <Map />
       </section>
     </Layout>
   

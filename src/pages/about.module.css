@@ -1,0 +1,57 @@
+.container {
+  margin: 0 auto;
+  max-width: 750px;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+.container h1 {
+  font-size: 4rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.section {
+  margin-bottom: 4rem;
+}
+
+.section:first-child {
+  margin-top: 4rem;
+}
+
+.ending span {
+  font-style: italic;
+  line-height: 2rem;
+}
+
+.link {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.link a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 2rem;
+  margin: 0 auto;
+  display: block;
+}
+
+.table {
+  max-width: 302px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.table td {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+/*# sourceMappingURL=about.module.css.map */

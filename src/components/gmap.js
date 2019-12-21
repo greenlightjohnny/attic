@@ -26,7 +26,7 @@ class SimpleMap extends Component {
                     <Gmap
                     lat={36.915519}
                     lng={-80.321161}
-                    text={'Angels'}
+                    text='Angels'
                     zoom={11}
                     color='blue'
                     name='test'

@@ -1,0 +1,170 @@
+.footer {
+  background-color: #292c2f;
+  margin-top: 3rem;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main h3 {
+  color: aquamarine;
+}
+
+.main h3 span {
+  color: #f4f4f4;
+}
+
+.main p {
+  color: #f4f4f4;
+}
+
+.main ul {
+  list-style-type: none;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.main li {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  direction: column;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.main a {
+  text-decoration: none;
+  color: #e1e8f1;
+}
+
+.main a:hover {
+  color: #39dae6;
+}
+
+.main > * {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 300px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .main > * {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.social {
+  color: #39dae6;
+  height: 1rem;
+  width: 1rem;
+  margin-right: 6px;
+}
+
+.left {
+  text-align: left;
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+}
+
+.left a {
+  display: inline-block;
+  margin-top: .5rem;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: transparent;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.contact input, .contact textarea {
+  border: 1px solid #39dae6;
+  border-radius: 10px;
+  background: transparent;
+  margin-bottom: 1rem;
+  color: #fff;
+  padding: 5px 8px 5px 8px;
+}
+
+.contact ::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 1;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.contact :-ms-input-placeholder {
+  color: #fff;
+  opacity: 1;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.contact ::-ms-input-placeholder {
+  color: #fff;
+  opacity: 1;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.contact ::placeholder {
+  color: #fff;
+  opacity: 1;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.contact label {
+  text-align: left;
+  color: #fff;
+}
+
+.contact .sendbutton {
+  background: #1e7f86;
+  border: transparent;
+  -webkit-transition: .5s ease-in-out all;
+  transition: .5s ease-in-out all;
+}
+
+.contact .sendbutton:hover {
+  background: #39dae6;
+}
+
+.contact textarea {
+  min-height: 9rem;
+}
+/*# sourceMappingURL=footer.module.css.map */

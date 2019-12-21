@@ -17,12 +17,13 @@ const SideBar = () => {
           marginRight: '5%',
           
         },
+        
         bmBurgerBars: {
           background: '#39dae6'
         },
         bmBurgerBarsHover: {
           background: '#5eecf7',
-          opacity: '1',
+          opacity: '1', 
           color: '#5eecf7'
         },
         bmCrossButton: {
