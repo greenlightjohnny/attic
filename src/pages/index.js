@@ -202,9 +202,7 @@ export default ({ data }) => (
         </article> */}
       </section>
 
-      <section className={indexStyles.location}>
-        <Map />
-      </section>
+     
     </Layout>
   
 )
